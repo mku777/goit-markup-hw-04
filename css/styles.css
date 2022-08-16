@@ -139,14 +139,34 @@ ul {
   color: var(--accent-color);
 }
 
+
 /* Cтили для index.html */
+
+
+/* Overlay */
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ), url(../images/background.jpg);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /* Hero */
 .hero {
   text-align: center;
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #2f303a;
+  background-color:var(--secondary-bg-color);
 }
 
 .hero-title {
@@ -210,10 +230,37 @@ ul {
 }
 
 .features-list .item {
-  width: 270px;
+  width: 270px;  
 }
 
-.features-list .title {
+.features-list .item::before {
+  display: block;
+  content:"";
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:var(--secondary-section-color);
+}
+
+.icon-antenna::before {
+  background-image: url(../images/studio-antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/studio-clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/studio-diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/studio-astronaut.svg);
+}
+
+
+.features-list .features-title {
   margin-top: 0;
   margin-bottom: 10px;
   color: var(--title-text-color);
@@ -275,13 +322,17 @@ ul {
 }
 
 .worker-list {
-  display: flex;
+  display: flex; 
 }
 
 .worker-list .item+.item {
   margin-left: 30px;
 }
 
+.worker-list .item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 
 /* Footer */
 
