@@ -1,0 +1,407 @@
+/* цвет h1 #FFFFFF */
+/* цвет заголовков h2 и h3 #212121 */
+/* цвет абзацев #757575 */
+/* голубой цвет на первой странице #2196F3 */
+/* вторичный цвет фона #F5F4FA */
+/* основной фон #ffffff */
+/* второстепенный фон #2F303A */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+  --secondary-section-color: #F5F4FA;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Logo */
+.logo {
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.logo .footer {
+  color: var(--primary-bg-color);
+}
+
+.logo-footer-back {
+  background-color: var(--secondary-bg-color);
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+/* Site nav */
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+
+.site-nav .item:not( :last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item+.item {
+  margin-left: 50px;
+}
+
+.auth-nav .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Cтили для index.html */
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #2f303a;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: var(--primary-bg-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Button */
+.button {
+  text-align: center;
+  border-radius: 4px;
+  border: 0;
+  padding: 10px 32px;
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  height: 50px;
+}
+
+/* Sections */
+
+.hidden-title,
+.hide-title {
+  display: none;
+}
+
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.container.padding {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Features */
+
+.features-list {
+  display: flex;
+}
+
+.features-list .item:not( :last-child) {
+  margin-right: 30px;
+}
+
+.features-list .item {
+  width: 270px;
+}
+
+.features-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-list .text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Activities */
+
+.activities {
+  display: flex;
+}
+
+.activities .item+.item {
+  margin-left: 30px;
+}
+
+/* Workers */
+
+.team {
+  background-color: var(--secondary-section-color);
+}
+
+.worker-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.worker-list .text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.worker-list .worker-img {
+  margin-bottom: 30px;
+}
+
+.works {
+  background-color: #f5f4fa;
+}
+
+.worker-list {
+  display: flex;
+}
+
+.worker-list .item+.item {
+  margin-left: 30px;
+}
+
+
+/* Footer */
+
+.footer {
+  background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.adress-nav .link {
+  color: #ffffff;
+  background-color: var(--secondary-bg-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.adress-nav .rgb-color {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.adress-nav .link:hover,
+.adress-nav .link:focus,
+.adress-nav .rgb-color:hover,
+.adress-nav .rgb-color:focus {
+  color: var(--accent-color);
+}
+
+
+.logo-footer-back {
+  margin-bottom: 20px;
+}
+
+.adress-nav-flex .item {
+  margin-bottom: 9px;
+}
+
+.adress-nav-flex .tel {
+  margin-bottom: 0px;
+}
+
+/* Portfolio Page */
+
+
+.hide-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.buttn .filter {
+  border-radius: 4px;
+  padding: 6px 22px;
+  text-align: center;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  border: 0;
+}
+
+/* Portfolio Page buttons */
+
+.buttn .filter:hover,
+.buttn .filter:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+
+.buttn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.buttn .item:not( :last-child) {
+  margin-right: 8px;
+}
+
+/* Portfolio page titles */
+
+.element-border {
+  box-sizing: border-box;
+  border: 1px solid #EEEEEE;
+  border-top: 0;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+}
+
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-flex {
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+
+
+.projects-flex:nth-child(3n) {
+  margin-right: 0;
+}
+
+.projects-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects-list .text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
