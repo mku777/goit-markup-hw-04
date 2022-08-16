@@ -361,6 +361,10 @@ ul {
 
 /* Portfolio page titles */
 
+.projects-image {
+  display: block;
+}
+
 .element-border {
   box-sizing: border-box;
   border: 1px solid #EEEEEE;
