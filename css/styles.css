@@ -250,13 +250,14 @@ section .hero {
 }
 
 .section .features {
-  padding-bottom: 0;
+  padding-bottom:0px;
 }
 
 
 .features-list {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 
 .features-list .item:not( :last-child) {
@@ -265,7 +266,6 @@ section .hero {
 
 .features-list .item {
   width: 270px;
-  height: 100px;
 }
 
 .features-list .title {
@@ -290,7 +290,7 @@ section .hero {
 /* Activities */
 
 .actions {
-  padding-top: 94px;
+  padding-top: 0px;
 }
 
 
