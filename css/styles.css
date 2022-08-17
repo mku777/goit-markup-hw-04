@@ -186,7 +186,7 @@ header {
 
 section .hero {
   width: 1600px;
-  heigth: 600px;
+  height: 600px;
 }
 
 .section-title {
@@ -385,17 +385,18 @@ section .hero {
 
 .projects-image {
   display: block;
-  margin-bottom: 20px;
 }
 
 .element-border {
- box-sizing: border-box;
-  border: 1px solid #EEEEEE;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-
-}
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  }
+  
 
 
 .projects-list {
@@ -417,7 +418,6 @@ section .hero {
 .projects-list .title {
   margin-top: 0;
   margin-bottom: 4px;
-  margin-left: 24px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -427,8 +427,7 @@ section .hero {
 
 .projects-list .text {
   margin-top: 0;
-  margin-bottom: 20px;
-  margin-left: 24px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
