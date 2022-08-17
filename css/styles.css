@@ -348,7 +348,8 @@ section .hero {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  margin: 0 0;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .worker-list .worker-img {
@@ -364,6 +365,8 @@ section .hero {
 .worker-list .item:nth-child(4n) {
   margin-right: 0;
 }
+
+
 
 .social-link-list {
   display: flex;
@@ -396,7 +399,6 @@ fill: #AFB1B8;
   background-color:var(--primary-bg-color);
   border-radius: 50%;
 }
-
 /* Footer */
 
 .footer {
