@@ -231,30 +231,22 @@ section .hero {
 
 /* Features */
 
-.features-list .item::before {
-  display: block;
-  content:"";
+
+.features-svg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
   height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  border: 0;
+  border-radius: 4px;
   background-color:var(--secondary-section-color);
-}
+  margin-bottom: 30px;
+  }
 
-.icon-antenna::before {
-  background-image: url(../images/studio-antenna.svg);
-}
 
-.icon-clock::before {
-  background-image: url(../images/studio-clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/studio-diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/studio-astronaut.svg);
+.svg-item {
+  text-align: center;
 }
 
 .section .features {
@@ -264,6 +256,7 @@ section .hero {
 
 .features-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .features-list .item:not( :last-child) {
@@ -297,7 +290,7 @@ section .hero {
 /* Activities */
 
 .actions {
-  padding-top: 0;
+  padding-top: 94px;
 }
 
 
@@ -372,15 +365,36 @@ section .hero {
   margin-right: 0;
 }
 
+.social-link-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+}
 
 .link-icon {
-  width: 20px;
-  height: 20px;
-  fill: #AFB1B8;
+fill: #AFB1B8;
 }
 
 .link-icon :hover {
-  fill:var(--accent-color);
+  fill: var(--primary-bg-color);
+}
+
+.social-media-link:hover {
+ background-color: var(--accent-color);
+}
+
+.social-media-link {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 44px;
+  height: 44px;
+  background-color:var(--primary-bg-color);
+  border-radius: 50%;
 }
 
 /* Footer */
