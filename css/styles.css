@@ -327,6 +327,8 @@ section .hero {
     margin-right: 30px;
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   }
 
   .worker-list .element {
@@ -370,6 +372,16 @@ section .hero {
   margin-right: 0;
 }
 
+
+.link-icon {
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+}
+
+.link-icon :hover {
+  fill:var(--accent-color);
+}
 
 /* Footer */
 
