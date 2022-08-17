@@ -221,6 +221,32 @@ section .hero {
 
 /* Features */
 
+.features-list .item::before {
+  display: block;
+  content:"";
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:var(--secondary-section-color);
+}
+
+.icon-antenna::before {
+  background-image: url(../images/studio-antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/studio-clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/studio-diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/studio-astronaut.svg);
+}
+
 .section .features {
   padding-bottom: 0;
 }
