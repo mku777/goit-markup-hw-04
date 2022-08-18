@@ -404,9 +404,45 @@ fill: #AFB1B8;
 
 /* Постоянные клиенты */
 
-.client-company {
-display: flex;
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+  margin-top: auto;
+  margin-bottom: auto;
 }
+
+.client-company {
+  display:flex;
+  align-items: center;
+}
+
+.client-button {
+  display:block;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  background-color: var(--primary-bg-color);
+  color: #AFB1B8;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.client-company li + li {
+  margin-left: 30px;
+}
+
+.client-button:hover {
+  color :var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+
 
 /* Footer */
 
