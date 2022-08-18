@@ -401,12 +401,21 @@ section .hero {
   color:var(--primary-bg-color);
 }
 
+.social-media-link:focus {
+  background-color:var(--accent-color);
+  color:var(--primary-bg-color);
+  outline: 1px var(--accent-color);
+}
+
 .link-icon {
   display:flex;
   align-items: center;
   justify-content: center;
 }
 
+.social-link-list li + li {
+  margin-left: 10px;
+}
 
 /* Постоянные клиенты */
 
@@ -450,7 +459,8 @@ section .hero {
 
 .client-button:focus {
   color :var(--accent-color);
-  border: 1px solid var(--accent-color);
+  outline: 1px solid var(--accent-color);
+  border: none;
 }
 
 .adress-nav-flex {
@@ -554,6 +564,11 @@ margin-bottom: 20px;
 
 .social-link-footer:hover {
 background-color: var(--accent-color);
+}
+
+.social-link-footer:focus {
+  background-color: var(--accent-color);
+  outline: 0px;
 }
 
 .link-icon-footer {
