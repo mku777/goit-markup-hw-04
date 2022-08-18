@@ -83,6 +83,7 @@ ul {
   align-items: center;
 }
 
+
 /* Site nav */
 
 .site-nav {
@@ -131,11 +132,19 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
+}
+
+.icon-nav {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Cтили для index.html */
@@ -366,41 +375,17 @@ section .hero {
   margin-right: 0;
 }
 
+/* Our team social link */
 
 
 .social-link-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 30px;
-}
-
-.link-icon {
-fill: #AFB1B8;
-}
-
-.link-icon :hover {
-  fill: var(--primary-bg-color);
-}
-
-.social-media-link:hover {
-  color: var(--primary-bg-color);
- background-color: var(--accent-color);
-}
-
-.social-media-link {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
   width: 44px;
   height: 44px;
-  background-color:var(--primary-bg-color);
-  border-radius: 50%;
-  
 }
+
 
 /* Постоянные клиенты */
 
@@ -447,9 +432,15 @@ fill: #AFB1B8;
   border: 1px solid var(--accent-color);
 }
 
-
+.adress-nav-flex {
+  margin-top: 20px;
+}
 
 /* Footer */
+
+.icon-svg {
+  fill:currentColor;
+}
 
 .footer {
   background-color: var(--secondary-bg-color);
@@ -479,9 +470,6 @@ fill: #AFB1B8;
 }
 
 
-.logo-footer-back {
-  margin-bottom: 20px;
-}
 
 .adress-nav-flex .item {
   margin-bottom: 9px;
@@ -490,6 +478,66 @@ fill: #AFB1B8;
 .adress-nav-flex .tel {
   margin-bottom: 0px;
 }
+
+.footer .container {
+  display:flex;
+}
+
+.footer-social {
+  margin-left: 70px;
+}
+
+
+
+/* footer Title */
+
+.title-footer {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color:var(--primary-bg-color);
+margin-bottom: 20px;
+}
+
+/* Footer social links */
+
+
+.iconsvg {
+  display: inline-flex;
+  fill: currentColor;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-links li + li {
+  margin-left: 10px;
+}
+
+.social-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  color:var(--primary-bg-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 0;
+}
+
+.social-link-footer:hover {
+background-color: var(--accent-color);
+}
+
 
 /* Portfolio Page */
 
